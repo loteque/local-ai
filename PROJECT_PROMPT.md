@@ -342,6 +342,27 @@ Prefer:
 - no automatic cloud fallback;
 - separate installation/update phases for network-dependent acquisition.
 
+## Workstation execution handoff
+
+Treat the repository as the handoff boundary between the architect and the target workstation.
+
+Before asking the user to perform any material action on the target workstation, first document that action in the repository. This includes scripts, commands, installation or configuration steps, benchmark or workload procedures, and manual actions whose output or side effects may affect project evidence or machine state.
+
+The repository documentation must identify, as applicable:
+
+- the purpose and question being resolved;
+- the exact script, command, or manual procedure;
+- prerequisites;
+- expected outputs;
+- the output or result location;
+- the project revision or protocol version associated with the run.
+
+Do not rely on chat-only instructions for material workstation execution. Trivial explanatory command examples that are not intended to be executed as project work are exempt.
+
+Prefer scripts and structured run reports when practical. Preserve raw outputs and failed runs as evidence. Avoid collecting or committing secrets or irrelevant personally identifying machine data.
+
+When target-machine outputs are needed for project decisions, have the user push the resulting run report or other documented artifact to the repository, then analyze that repository state as target-machine evidence.
+
 ## Experimental program
 
 ### Gate 0: workstation baseline
