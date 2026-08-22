@@ -1,6 +1,6 @@
 # Project Steward Guidance
 
-Reviewed project through: `aec062f90ea73e9452a14fdc9b151cb186a2be92`
+Reviewed project through: `d49cb9e81e605bd20f31f59cd126aba5b14cc026`
 
 Steward role contract: `roles/PROJECT_STEWARD.md`
 
@@ -10,7 +10,9 @@ The Elastic Resident AI remains the correct primary experimental baseline.
 
 The repository continues to express the intended maximal-first philosophy clearly: begin with the strongest plausibly useful resident system, measure actual workstation interference and UX failures, introduce only the narrowest evidence-driven compromises, and restore capability when constraints disappear.
 
-The prior governance inconsistency between the primary architect role and the independent Project Steward role has been resolved. No new architectural, experimental, local-only, authority-boundary, or workstation-coexistence finding is introduced by the reviewed delta.
+The reviewed delta adds a repository-mediated workstation execution handoff and the first Gate 0 system-state bootstrap protocol, collector, and result evidence contract. These changes improve reproducibility and target-machine evidence handling without prematurely constraining model size, quantization, backend, resource reserves, topology, or later workload methodology. The Gate 0 protocol explicitly distinguishes system-state evidence from workstation-performance baseline evidence and makes no architectural conclusion from the bootstrap run.
+
+No new architectural, experimental, local-only, authority-boundary, or workstation-coexistence finding is introduced by the reviewed delta.
 
 ## Open findings
 
@@ -46,6 +48,6 @@ The conflicting stewardship claim has been removed without weakening the project
 
 ## Steward posture for the next gate
 
-The next implementation work should establish measurement capability and Gate 0 workstation baselines without preemptively constraining the Elastic Resident design.
+Gate 0 should now use the documented system-state bootstrap to establish authoritative target-machine configuration and then proceed to representative workload baselines. The bootstrap result should not be treated as a workstation-performance baseline, and later Gate 0 workload protocols should remain driven by observed target-machine tooling and state rather than assumptions.
 
 The Steward should specifically challenge any attempt to encode fixed resource reserves, a permanent backend preference, or a fixed 9B model ceiling before target-machine evidence exists.
