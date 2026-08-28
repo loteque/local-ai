@@ -1,6 +1,6 @@
 # Project Steward Guidance
 
-Reviewed project through: `7bb979c42b05278c569636069abbecd4d1fe7b40`
+Reviewed project through: `7030fb694aed16769cbd5ea30fad2c1e09dc84db`
 
 Steward role contract: `roles/PROJECT_STEWARD.md`
 
@@ -10,11 +10,11 @@ The Elastic Resident AI remains the correct primary experimental baseline.
 
 The repository continues to express the intended maximal-first philosophy clearly: begin with the strongest plausibly useful resident system, measure actual workstation interference and UX failures, introduce only the narrowest evidence-driven compromises, and restore capability when constraints disappear.
 
-The reviewed delta adds a project README that accurately summarizes most of the governing architecture, local-only boundary, staged experimental program, workstation-coexistence requirement, and evidence-first posture. It does not lock in a backend, model size, quantization, topology, resource reserve, or compromise envelope.
+The reviewed delta adds `docs/COGNITIVE_CASCADE_DESIGN.md` and README framing for a Cognitive Cascade research path. The design is careful to label its claims as hypotheses, preserves local-only operation, durable state outside model weights, deterministic authorization, backend/model/topology separability, workstation coexistence, and comparative experimentation. It also explicitly states that it does not supersede Elastic Resident AI.
 
-One issue should be corrected before the README is allowed to act as a durable summary of project decision policy: its optimization-priority pie chart assigns exact percentage weights that do not exist in the governing prompt or design. The governing source provides an approximate ordinal priority and explicitly cautions against prematurely reducing tradeoffs to a scalar score. The README text repeats the Pareto requirement, but the invented percentages can still be mistaken for quantitative decision weights.
+However, the new material currently describes Cognitive Cascade as a second or alternative architectural path centered on a deliberately small persistent front-end before target-machine evidence has established a limitation in the maximal resident baseline or demonstrated a superior capability/latency/correctness/coexistence frontier for that topology. That framing risks converting an interesting hypothesis into peer architecture status before the project has earned the departure from its governing maximal-first baseline.
 
-No new local-only, authority-boundary, workstation-coexistence, backend-coupling, or maximal-residency regression is otherwise introduced by the reviewed delta.
+The existing README optimization-weight finding remains open. No new local-only, authority-boundary, backend-coupling, or workstation-coexistence regression was found in the reviewed delta.
 
 ## Open findings
 
@@ -29,6 +29,18 @@ No new local-only, authority-boundary, workstation-coexistence, backend-coupling
 **Smallest corrective step:** Replace the weighted pie with a non-quantitative visualization or an explicitly ordinal representation that mirrors the governing priority order without invented numeric magnitudes.
 
 **Resolution condition:** Clear this finding when the README no longer presents unsupported quantitative weights as project optimization priorities, or when a separately approved project decision establishes such weights with a justified method.
+
+### STEW-003 - S3 - Cognitive Cascade is framed as a peer path before evidence earns the departure
+
+**Repository fact:** `docs/COGNITIVE_CASCADE_DESIGN.md` defines Cognitive Cascade as an "alternative architectural path" whose common path uses a small or modest persistent cognitive front-end and selectively recruits larger reasoning systems. `README.md` likewise presents it as a "second architectural path" and an "experimental alternative" alongside Elastic Resident AI. The design correctly labels the idea as a hypothesis and says Elastic Resident AI remains primary.
+
+**Risk:** The governing prompt says new distinct designs should target a real limitation not already represented by the elastic architecture, and that other architectures remain primarily compromise envelopes unless evidence demonstrates a superior frontier. A small-front-end-first topology deliberately gives up always-resident generalist capability before Gate 2 has established the maximal resident baseline or mixed-workload evidence has shown that such a retreat is needed. Calling the hypothesis a peer architectural path now may later allow implementation convenience, edge-oriented intuition, or orchestration enthusiasm to bypass the maximal-first experiment.
+
+**Why evidence is insufficient:** No target-machine measurement currently shows that the strongest practical resident generalist causes unacceptable latency or workstation interference, and no controlled comparison shows that the Cognitive Cascade topology provides a better capability/latency/correctness/coexistence frontier. The new design itself schedules those comparisons as future experiments.
+
+**Smallest corrective step:** Preserve the Cognitive Cascade document and experiments, but treat the topology as an experimental interpretation or candidate envelope inside Elastic Resident AI until a controlled comparison establishes that the distinct small-front-end-first organization solves a measured limitation or provides a superior frontier. Do not use the alternative-path label as implementation authority to start from a weaker resident model.
+
+**Resolution condition:** Clear this finding when either (a) the repository framing makes Cognitive Cascade explicitly subordinate to the maximal resident baseline until comparative evidence exists, or (b) reproducible target-machine evidence establishes a real limitation in the baseline and demonstrates that the Cognitive Cascade topology materially improves the relevant frontier without unacceptable correctness, latency, complexity, or coexistence cost.
 
 ## Watch items
 
@@ -62,4 +74,6 @@ The conflicting stewardship claim has been removed without weakening the project
 
 Gate 0 should continue using repository-mediated protocols and target-machine evidence to establish authoritative machine state and representative workload baselines. The bootstrap result should not be treated as a workstation-performance baseline, and later Gate 0 workload protocols should remain driven by observed target-machine tooling and state rather than assumptions.
 
-The Steward should specifically challenge any attempt to encode fixed resource reserves, a permanent backend preference, a fixed 9B model ceiling, or unsupported quantitative optimization weights before evidence or an explicit governing decision exists.
+The Steward should specifically challenge any attempt to encode fixed resource reserves, a permanent backend preference, a fixed 9B model ceiling, unsupported quantitative optimization weights, or a small-front-end-first implementation default before evidence or an explicit governing decision exists.
+
+If Cognitive Cascade experiments are prepared, require a fair controlled comparison against the strongest practical resident-generalist baseline, including end-to-end usefulness, escalation errors, retrieval quality, orchestration overhead, workstation interference, and the cost of missed or unnecessary escalation. Preserve the research direction without allowing it to become a premature compromise.
