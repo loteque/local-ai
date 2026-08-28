@@ -54,6 +54,26 @@ That means:
 
 ---
 
+## Alternative path: Cognitive Cascade 🧠🔀
+
+Alongside the primary Elastic Resident AI baseline, the project is also preserving a second architectural path: **Cognitive Cascade**.
+
+Instead of asking one large always-resident model to contain most of the assistant's knowledge and reasoning capacity, this path explores a **small persistent cognitive front-end** backed by:
+
+- durable local memory and retrieval;
+- deterministic tools;
+- resident or on-demand specialists;
+- selectively recruited deeper reasoning models;
+- possible future latent or nonlinguistic reasoning substrates.
+
+The core hypothesis is that a modest always-awake model may become a highly useful personal helper if it is good at maintaining working state, retrieving the right memory, choosing tools, and escalating difficult problems to more capable reasoning systems.
+
+This is an **experimental alternative, not a replacement for Elastic Resident AI**. The project should compare the two paths through measurement rather than assume either one wins in advance.
+
+Read the full motivation, model modes, hypotheses, risks, and experimental direction in [`docs/COGNITIVE_CASCADE_DESIGN.md`](docs/COGNITIVE_CASCADE_DESIGN.md).
+
+---
+
 ## Architecture at a glance 🗺️
 
 ```mermaid
@@ -251,6 +271,7 @@ Start here:
 
 - [`PROJECT_PROMPT.md`](PROJECT_PROMPT.md) — project mission, role expectations, architecture priorities, and experimental philosophy
 - [`docs/ELASTIC_RESIDENT_AI_DESIGN.md`](docs/ELASTIC_RESIDENT_AI_DESIGN.md) — the primary design document
+- [`docs/COGNITIVE_CASCADE_DESIGN.md`](docs/COGNITIVE_CASCADE_DESIGN.md) — an alternative cognitive-front-end and cascading-reasoning research path
 - [`docs/STEWARD_GUIDANCE.md`](docs/STEWARD_GUIDANCE.md) — independent review guidance and current findings/watch items
 - [`roles/PROJECT_STEWARD.md`](roles/PROJECT_STEWARD.md) — the Steward role contract
 
