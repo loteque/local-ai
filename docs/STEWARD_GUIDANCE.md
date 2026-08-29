@@ -1,6 +1,6 @@
 # Project Steward Guidance
 
-Reviewed project through: `7030fb694aed16769cbd5ea30fad2c1e09dc84db`
+Reviewed project through: `d8128eb43b914172ad5906348784120e2b97369e`
 
 Steward role contract: `roles/PROJECT_STEWARD.md`
 
@@ -10,11 +10,11 @@ The Elastic Resident AI remains the correct primary experimental baseline.
 
 The repository continues to express the intended maximal-first philosophy clearly: begin with the strongest plausibly useful resident system, measure actual workstation interference and UX failures, introduce only the narrowest evidence-driven compromises, and restore capability when constraints disappear.
 
-The reviewed delta adds `docs/COGNITIVE_CASCADE_DESIGN.md` and README framing for a Cognitive Cascade research path. The design is careful to label its claims as hypotheses, preserves local-only operation, durable state outside model weights, deterministic authorization, backend/model/topology separability, workstation coexistence, and comparative experimentation. It also explicitly states that it does not supersede Elastic Resident AI.
+The reviewed delta adds `docs/DOMAIN_CRYSTALLIZATION_RESEARCH.md`, a long-horizon research direction for discovering recurring activity domains from provenance-preserving interaction history and testing whether domain-specific cognition can be distilled into smaller specialist models while durable facts and authoritative state remain outside model weights.
 
-However, the new material currently describes Cognitive Cascade as a second or alternative architectural path centered on a deliberately small persistent front-end before target-machine evidence has established a limitation in the maximal resident baseline or demonstrated a superior capability/latency/correctness/coexistence frontier for that topology. That framing risks converting an interesting hypothesis into peer architecture status before the project has earned the departure from its governing maximal-first baseline.
+The new document is appropriately bounded. It explicitly states that it does not supersede Elastic Resident AI, does not activate a new implementation path, and does not resolve the existing Cognitive Cascade concern. It preserves backend/model/topology separability, local-only operation, deterministic authority boundaries, explicit durable state, controlled specialist-versus-generalist comparisons, workstation-interference measurement, rejection conditions, and the requirement to measure the strongest practical resident baseline first. It therefore preserves the hypothesis without converting it into present architectural authority.
 
-The existing README optimization-weight finding remains open. No new local-only, authority-boundary, backend-coupling, or workstation-coexistence regression was found in the reviewed delta.
+The existing README optimization-weight finding and Cognitive Cascade framing finding remain open and unchanged. No new local-only, authority-boundary, backend-coupling, workstation-coexistence, premature-compromise, or unnecessary-complexity regression was found in the reviewed substantive delta.
 
 ## Open findings
 
@@ -77,3 +77,5 @@ Gate 0 should continue using repository-mediated protocols and target-machine ev
 The Steward should specifically challenge any attempt to encode fixed resource reserves, a permanent backend preference, a fixed 9B model ceiling, unsupported quantitative optimization weights, or a small-front-end-first implementation default before evidence or an explicit governing decision exists.
 
 If Cognitive Cascade experiments are prepared, require a fair controlled comparison against the strongest practical resident-generalist baseline, including end-to-end usefulness, escalation errors, retrieval quality, orchestration overhead, workstation interference, and the cost of missed or unnecessary escalation. Preserve the research direction without allowing it to become a premature compromise.
+
+Treat Domain Crystallization as deferred research until durable-memory provenance, correction semantics, stable evaluation tasks, and representative accumulated domain evidence exist. If specialist experiments eventually begin, preserve the document's controlled comparisons against an equivalently sized generalist, the stronger teacher/general model, and deterministic-plus-retrieval baselines, and reject specialist complexity when it does not improve the measured practical frontier.
