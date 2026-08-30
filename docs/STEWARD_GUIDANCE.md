@@ -1,6 +1,6 @@
 # Project Steward Guidance
 
-Reviewed project through: `d8128eb43b914172ad5906348784120e2b97369e`
+Reviewed project through: `9b9af51aa44811f3819088a720c0d83ab0c9d348`
 
 Steward role contract: `roles/PROJECT_STEWARD.md`
 
@@ -10,11 +10,11 @@ The Elastic Resident AI remains the correct primary experimental baseline.
 
 The repository continues to express the intended maximal-first philosophy clearly: begin with the strongest plausibly useful resident system, measure actual workstation interference and UX failures, introduce only the narrowest evidence-driven compromises, and restore capability when constraints disappear.
 
-The reviewed delta adds `docs/DOMAIN_CRYSTALLIZATION_RESEARCH.md`, a long-horizon research direction for discovering recurring activity domains from provenance-preserving interaction history and testing whether domain-specific cognition can be distilled into smaller specialist models while durable facts and authoritative state remain outside model weights.
+The reviewed substantive delta adds `docs/VOICE_TO_REPO_INTERFACE_DESIGN.md`, a voice-driven Android-to-workstation repository-observation interface experiment. The document explicitly keeps the interface inside Elastic Resident AI, does not advance or replace the governing experimental gates, and preserves the workstation as the trusted reasoning and execution environment. Phase One is user-initiated and read-only; repository mutation is excluded, model output is mediated through structured operations and deterministic policy, repository state is re-observed near request time, and auditability is part of the experiment.
 
-The new document is appropriately bounded. It explicitly states that it does not supersede Elastic Resident AI, does not activate a new implementation path, and does not resolve the existing Cognitive Cascade concern. It preserves backend/model/topology separability, local-only operation, deterministic authority boundaries, explicit durable state, controlled specialist-versus-generalist comparisons, workstation-interference measurement, rejection conditions, and the requirement to measure the strongest practical resident baseline first. It therefore preserves the hypothesis without converting it into present architectural authority.
+The interface design also preserves the local-only boundary: ordinary local repository inspection, inference, policy, and audit behavior remain capable of operating without outbound networking, while remote connectivity and GitHub API use are labeled as optional network-dependent modes that must fail explicitly rather than trigger silent cloud fallback. Kotlin, Compose, Python, FastAPI, Tailscale, speech-placement choices, and GitHub integration are treated as replaceable implementation candidates rather than permanent topology or backend requirements. The design includes end-to-end latency decomposition, repository-correctness checks, speech-versus-reasoning error separation, cellular behavior, workstation-interference measurement, and subjective utility as experimental questions.
 
-The existing README optimization-weight finding and Cognitive Cascade framing finding remain open and unchanged. No new local-only, authority-boundary, backend-coupling, workstation-coexistence, premature-compromise, or unnecessary-complexity regression was found in the reviewed substantive delta.
+The existing README optimization-weight finding and Cognitive Cascade framing finding remain open and unchanged. No new local-only, authority-boundary, backend/model/topology coupling, workstation-coexistence, premature-compromise, unfair-experiment, unsupported-conclusion, or unnecessary-complexity finding is warranted by the reviewed substantive delta.
 
 ## Open findings
 
@@ -79,3 +79,5 @@ The Steward should specifically challenge any attempt to encode fixed resource r
 If Cognitive Cascade experiments are prepared, require a fair controlled comparison against the strongest practical resident-generalist baseline, including end-to-end usefulness, escalation errors, retrieval quality, orchestration overhead, workstation interference, and the cost of missed or unnecessary escalation. Preserve the research direction without allowing it to become a premature compromise.
 
 Treat Domain Crystallization as deferred research until durable-memory provenance, correction semantics, stable evaluation tasks, and representative accumulated domain evidence exist. If specialist experiments eventually begin, preserve the document's controlled comparisons against an equivalently sized generalist, the stronger teacher/general model, and deterministic-plus-retrieval baselines, and reject specialist complexity when it does not improve the measured practical frontier.
+
+Treat the Voice-to-Repo work as an interface experiment orthogonal to the model-topology gates. Preserve Phase One's read-only authority boundary, re-observation of repository state, explicit network-dependency reporting, replaceable transport/runtime choices, and workstation-interference measurements. Do not allow remote convenience or future mutation features to grant semantic authority to the phone, network layer, model, or orchestration lifecycle.
